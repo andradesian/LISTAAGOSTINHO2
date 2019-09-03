@@ -1,0 +1,23 @@
+5)
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  float raio, altura, volume, area, pi;
+  //utilizar o valor em centímetros;
+  printf("digite o raio do cilindro:\n");
+  scanf("%f", &raio);
+  printf("digite a altura:\n");
+  scanf("%f", &altura);
+  pi=3.14;
+  volume=pi*raio*raio*altura;
+  area=2*pi*raio*(altura+raio);
+  printf("O volume eh: %0.1f\n", volume);
+  printf("A area eh:%0.1f\n", area);
+
+
+
+
+ 
+  return 0;
+}
