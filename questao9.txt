@@ -1,0 +1,14 @@
+9)
+#include <stdio.h>
+
+int main(void) {
+  float lucro, imposto,valorf;
+  printf("qual o preço do automóvel?\n");
+  scanf("%f", &valorf);
+  lucro=valorf*0.12;
+  imposto=valorf*0.45;
+printf("o lucro total do revendedor é: %0.1f\n", lucro);
+printf("o imposto pago foi de: %0.1f\n",imposto);
+
+  return 0;
+}
