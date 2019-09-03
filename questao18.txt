@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(void) {
+  int ano=0, b=0 , i=0, c=0;
+  printf("digite o ano\n");
+  scanf("%d", &ano);
+  b = ano%400;
+  i = ano%4;
+  c = ano%100;
+  
+  if(b==0){
+    printf("o ano é bissexto\n");
+
+  }
+  
+  if(c==0){
+    printf("nao eh bissexto\n");
+  }
+  if(i == 0){
+    printf("o ano é bissexto\n");
+
+  }
+  else 
+  printf("não é bissexto\n");
+  return 0;
+}
