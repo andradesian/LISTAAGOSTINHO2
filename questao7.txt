@@ -1,0 +1,19 @@
+7)
+#include <stdio.h>
+
+int main(void) {
+ float x,y,z;
+ printf("digite o primeiro valor:\n");
+ scanf("%f", &x);
+ printf("digite o segundo valor:\n");
+ scanf("%f", &y);
+ printf("digite o terceiro valor:\n");
+ scanf("%f", &z);
+ if(x>y+z){
+   printf("x é maior que a soma dos outros dois");
+ }
+ else{
+   printf("x nao é maior que a soma dos outros dois valores");
+ }
+  return 0;
+}
