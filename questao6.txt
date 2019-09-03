@@ -1,0 +1,19 @@
+6)
+#include <stdio.h>
+
+int main(void) {
+float x,y,soma,produto,quociente;
+printf("informe o primeiro valor\n");
+scanf("%f", &x);
+printf("informe o segundo valor\n");
+scanf("%f", &y);
+soma=x+y;
+produto=x*y;
+quociente=x/y;
+printf("a soma desses valores eh:%0.1f\n", soma);
+printf("o produto desses valores eh:%0.1f\n", produto);
+printf("o quociente desses valores eh:%0.1f\n",quociente);
+
+
+  return 0;
+}
