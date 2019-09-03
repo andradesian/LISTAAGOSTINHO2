@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (void){
+
+float n=0, c=0, z=0;
+printf("quantidade de latão: ");
+scanf("%f", &n);
+
+c = n * 0.7;
+z = n * 0.3;
+
+printf("cobre: %f \n zinco: %f \n", c, z);
+
+
+  return 0;
+}
