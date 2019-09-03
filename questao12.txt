@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+  float x=0, y=0, z=0;
+  printf("Digite o primeiro numero:\n");
+  scanf("%f",&x);
+  printf("Digite o segundo numero:\n");
+  scanf("%f",&y);
+
+  if (y > 0 ){
+    z = x / y;
+    printf("o quociente entre os dois eh: %f\n", z);
+  }
+  if( y < 0){
+      z = x / y;
+    printf("o quociente entre os dois eh: %f\n", z);
+  }
+  else{
+    printf("DIVISAO POR ZERO");
+  }
+
+  return 0;
+}
