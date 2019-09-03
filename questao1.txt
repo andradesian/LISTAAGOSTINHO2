@@ -1,0 +1,15 @@
+Arthur Medeiros Macedo e Rodrigo Miguel 
+
+1)
+#include <stdio.h>
+
+int main(void) {
+  int x;
+  printf("Digite um numero ");
+  scanf("%d", &x);
+  printf("seu sucessor eh: %d", x+1);
+
+
+ 
+  return 0;
+}
