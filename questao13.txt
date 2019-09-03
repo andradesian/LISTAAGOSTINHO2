@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+  float x=0,y=0,z=0;
+  printf("digite o primeiro numero:\n");
+  scanf("%f", &x);
+  printf("digite o segundo numero:\n");
+  scanf("%f", &y);
+  printf("digite o terceiro numero:\n");
+  scanf("%f", &z);
+  
+  if( x > y && x > z){
+    printf("o maior numero eh: %f \n", x);
+  }
+  if( y > x && y > z){
+    printf("o maior numero eh: %f \n", y);
+  }
+  if( z > x && z > y){
+    printf("o maior numero eh: %f \n", z);
+  }
+  return 0;
+}
