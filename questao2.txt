@@ -1,0 +1,23 @@
+2)
+#include <stdio.h>
+
+int main(void) {
+  float n1, n2, n3, n4, mediaf;
+  printf("Digite a primeira nota\n");
+  scanf("%f", &n1);
+  printf("Digite a segunda nota\n");
+  scanf("%f", &n2);
+  printf("Digite a terceira nota\n");
+  scanf("%f", &n3);
+  mediaf= (n1+n2+n3)/3;
+  printf("a media eh: %0.1f", mediaf );
+  if(mediaf>=5){printf("Aluno aprovado\n");
+  }
+  else{
+    printf("aluno fará reposição");
+  }
+
+
+ 
+  return 0;
+}
