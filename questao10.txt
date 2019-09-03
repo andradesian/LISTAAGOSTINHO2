@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void) {
+  float v=0, c=0, m1=0, m2=0, m3=0;
+
+  printf("Digite a velocidade da via: \n");
+  scanf("%f", &v);
+  printf("digite a velocidade do carro: \n");
+  scanf("%f", &c);
+  if (c >= v+1 && c <= v + 10 ){
+    printf("sua multa eh de R$50,00 \n");
+  }
+      if(c >= v + 11 && c <= v + 30 ){
+      printf("sua multa eh de R& 100,00 \n");
+      }
+      if(c >= v + 31 ){
+      printf ("sua multa eh de R$200,00\n");
+      }
+    
+    if(c <= v + 10)    {
+    printf("nao tem multa\n");
+     
+     
+    }
+  
+  return 0;
+}
