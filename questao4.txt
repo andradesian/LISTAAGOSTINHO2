@@ -1,0 +1,18 @@
+4)
+#include <stdio.h>
+int main(void) {
+int x, y, quociente;
+float resto;
+printf("digite um numero:\n");
+scanf("%d", &x);
+printf("digite outro numero\n", y);
+scanf("%d", &y);
+resto=x%y;
+quociente=x/y;
+printf("o resto eh: %f\n", resto);
+printf("o quociente eh: %d", quociente);
+
+
+
+  return 0;
+}
