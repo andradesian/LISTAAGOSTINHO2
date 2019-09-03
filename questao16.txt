@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    float X1, Y1, Z1, X2, Y2, Z2, X3, Y3, Z3, lA, lB, lC;
+    printf("Insira os pontos do plano:\n");
+    printf("Informe X, Y e Z do primeiro ponto:\n");
+    printf("X1= ");
+    scanf("%f", &X1);
+    printf("Y1= ");
+    scanf("%f", &Y1);
+    printf("Z1= ");
+    scanf("%f", &Z1);
+    printf("Informe X, Y e Z do segundo ponto:\n");
+    printf("X2= ");
+    scanf("%f", &X2);
+    printf("Y2= ");
+    scanf("%f", &Y2);
+    printf("Z2= ");
+    scanf("%f", &Z2);
+    printf("Informe X, Y e Z do terceiro ponto:\n");
+    printf("X3= ");
+    scanf("%f", &X3);
+    printf("Y3= ");
+    scanf("%f", &Y3);
+    printf("Z3= ");
+    scanf("%f", &Z3);
+    lA = sqrt((X2-X1)(X2-X1)+(Y2-Y1)(Y2-Y1)+(Z2-Z1)*(Z2-Z1));
+    lB = sqrt((X3-X2)(X3-X2)+(Y3-Y2)(Y3-Y2)+(Z3-Z2)*(Z3-Z2));
+    lC = sqrt((X3-X1)(X3-X1)+(Y3-Y1)(Y3-Y1)+(Z3-Z1)*(Z3-Z1));
+    if(lA==lB&&lB==lC){
+        printf("É um triângulo equilátero acutângulo!\n");
+    }else if(lA==lB&&lA!=lC || lA==lC&&lA!=lB || lB==lC&&lA!=lC){
+                if(lA==lB&&lA!=lC && (lC*lC==lA*lA+lB*lB)){
+                    printf("É um triângulo isósceles retângulo!\n");
+                }else if(lA==lC&&lA!=lB && (lB*lB==lA*lA+lC*lC)){
+                    printf("É um triângulo isósceles retângulo!\n");
+                }else if(lB==lC&&lB!=lA && (lA*lA==lB*lB+lC*lC)){
+                    printf("É um triângulo isósceles retângulo!\n");
+                }else{
+                    printf("É um triângulo isósceles!\n");
+                }
+    }else{
+        printf("É um triângulo escaleno!\n");
+    }
+    
+        
+}
